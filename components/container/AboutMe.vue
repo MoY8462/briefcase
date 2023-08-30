@@ -10,11 +10,7 @@
     >
       <h3 class="text-green-dark text-2xl font-semibold">Sobre mí</h3>
       <p class="text-gray text-base font-semibold">
-        Soy diseñadora con experiencia en Diseño UI y UX , creando wireframes de
-        baja y mediana fidelidad, diseño de prototipos en alta fidelidad ,
-        Diseño de logos, Branding para marcas y Videos. Aplicando Design Sprint
-        , Design Thinking y testeo de prototipos . Además, manejo programas como
-        Adobe Illustrator, Adobe photoshop, Adobe after effects y Figma.
+        Soy Ingeniero Mecatrónico
       </p>
     </section>
   </div>
