@@ -15,7 +15,7 @@
       >
       <BaseButton
         color="dark"
-        class="animate-bounce w-[200px] uppercase mt-6"
+        class="animate-bounce max-w-[200px] uppercase mt-6"
         icon="doc"
         >Descargar CV</BaseButton
       >
