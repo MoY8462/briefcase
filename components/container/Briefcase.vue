@@ -11,14 +11,13 @@
   </div>
 </template>
 <script setup>
-import { ref } from "vue"
+import { ref } from "vue";
 
 const options = ref([
   {
     url: "./public/code.png",
     title: "Nuxt 2 con SuperMap",
-    description: "Geoportal elaborado con SuperMap iClient para Vue.js"
-  }
-])
-
+    description: "Geoportal elaborado con SuperMap iClient para Vue.js",
+  },
+]);
 </script>

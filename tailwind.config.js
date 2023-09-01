@@ -33,7 +33,5 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [
-    require("./assets/theme/base")
-  ],
+  plugins: [require("./assets/theme/base")],
 };
