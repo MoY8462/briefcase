@@ -13,7 +13,10 @@
       <label class="text-green-dark font-medium text-base md:text-xl"
         >Ingeniero Mecatrónico y Front-End Developer</label
       >
-      <BaseButton color="dark" class="animate-bounce w-[200px] uppercase mt-6" icon="doc"
+      <BaseButton
+        color="dark"
+        class="animate-bounce w-[200px] uppercase mt-6"
+        icon="doc"
         >Descargar CV</BaseButton
       >
     </section>

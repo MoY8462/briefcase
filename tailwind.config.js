@@ -35,12 +35,9 @@ module.exports = {
       backgroundImage: {
         arrow_up: "url('./assets/icons/arrow_up.svg')",
         code: "url('./assets/icons/code.svg')",
-        doc: "url('./assets/icons/doc.svg')"
-      }
+        doc: "url('./assets/icons/doc.svg')",
+      },
     },
   },
-  plugins: [
-  require("./assets/theme/base"),
-  require("./assets/theme/image")
-  ],
+  plugins: [require("./assets/theme/base"), require("./assets/theme/image")],
 };
