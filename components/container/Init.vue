@@ -19,8 +19,7 @@
         icon="doc"
         @onClick="downloadPDF"
         >Descargar CV
-        </BaseButton
-      >
+      </BaseButton>
     </section>
     <section class="hidden md:flex"></section>
     <section
@@ -34,7 +33,9 @@
       </label>
       <img class="w-5 h-24 pb-[10px]" src="~/assets/icons/line.svg" alt="" />
       <div class="flex flex-col gap-2">
-        <a href="https://www.linkedin.com/in/mois%C3%A9s-alejandro-s%C3%A1nchez-vergara-3a28a621b/">
+        <a
+          href="https://www.linkedin.com/in/mois%C3%A9s-alejandro-s%C3%A1nchez-vergara-3a28a621b/"
+        >
           <img
             class="w-5 h-5"
             src="~/assets/icons/linkedin.svg"
@@ -54,22 +55,16 @@
 </template>
 
 <script setup>
-
 const downloadPDF = () => {
-
-  const nombreArchivo = 'CV_Moises_Sanchez.pdf'; // Nombre del archivo PDF
+  const nombreArchivo = "CV_Moises_Sanchez.pdf"; // Nombre del archivo PDF
 
   // Crear un enlace temporal para la descarga
-  const enlaceDescarga = document.createElement('a');
+  const enlaceDescarga = document.createElement("a");
   enlaceDescarga.href = "/pdf/cv.pdf";
-  console.log(enlaceDescarga)
+  console.log(enlaceDescarga);
   enlaceDescarga.download = nombreArchivo;
 
   // Simular un clic en el enlace para iniciar la descarga
   enlaceDescarga.click();
-
-
-}
-  
-
+};
 </script>

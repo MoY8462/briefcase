@@ -28,12 +28,17 @@
       </div>
       <!-- </Transition> -->
     </section>
-    <h2 class="text-green-teal text-base font-semibold hover:underline hover:decoration-double truncate" v-on:click="openProject">{{ title }}</h2>
+    <h2
+      class="text-green-teal text-base font-semibold hover:underline hover:decoration-double truncate"
+      v-on:click="openProject"
+    >
+      {{ title }}
+    </h2>
     <h3 class="text-gray text-sm font-semibold truncate">{{ description }}</h3>
   </div>
 </template>
 <script setup>
-import { toRef } from "vue"
+import { toRef } from "vue";
 const props = defineProps({
   urlImage: String,
   urlHost: String,
@@ -42,13 +47,11 @@ const props = defineProps({
   description: String,
 });
 
-const urlHost = toRef(props, 'urlHost')
+const urlHost = toRef(props, "urlHost");
 
 const openProject = () => {
-
-  const win = window.open(urlHost.value, '_blank');
+  const win = window.open(urlHost.value, "_blank");
   // Cambiar el foco al nuevo tab (punto opcional)
   win.focus();
-
-}
+};
 </script>
