@@ -7,7 +7,7 @@
     >
       <img
         class="w-full h-full rounded blur-0 group-hover:blur-sm transition-all ease-out delay-150"
-        src="~/public/code.png"
+        :src="urlImage"
         :alt="urlImage"
       />
       <!-- <Transition> -->
@@ -17,7 +17,8 @@
         <BaseButton
           color="lime"
           class="!rounded-full w-min uppercase scale-150 shadow-xl shadow-green-lime/60 hover:bg-green-teal"
-          icon="doc"
+          icon="computer_desktop"
+          @onClick="openProject"
         ></BaseButton>
         <BaseButton
           color="lime"
@@ -27,14 +28,27 @@
       </div>
       <!-- </Transition> -->
     </section>
-    <h2 class="text-green-teal text-base font-semibold">{{ title }}</h2>
-    <h3 class="text-gray text-sm font-semibold">{{ description }}</h3>
+    <h2 class="text-green-teal text-base font-semibold hover:underline hover:decoration-double truncate" v-on:click="openProject">{{ title }}</h2>
+    <h3 class="text-gray text-sm font-semibold truncate">{{ description }}</h3>
   </div>
 </template>
 <script setup>
-defineProps({
+import { toRef } from "vue"
+const props = defineProps({
   urlImage: String,
+  urlHost: String,
+  ulrCode: String,
   title: String,
   description: String,
 });
+
+const urlHost = toRef(props, 'urlHost')
+
+const openProject = () => {
+
+  const win = window.open(urlHost.value, '_blank');
+  // Cambiar el foco al nuevo tab (punto opcional)
+  win.focus();
+
+}
 </script>

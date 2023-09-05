@@ -12,6 +12,9 @@ module.exports = plugin(function ({ addBase, theme }) {
     ".code": {
       backgroundImage: theme("backgroundImage.code"),
     },
+    ".computer_desktop": {
+      backgroundImage: theme("backgroundImage.computer_desktop"),
+    },
     ".doc": {
       backgroundImage: theme("backgroundImage.doc"),
     },

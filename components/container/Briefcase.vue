@@ -12,6 +12,7 @@
         :urlImage="option.urlImage"
         :title="option.title"
         :description="option.description"
+        :urlHost="option.host"
       />
     </section>
   </div>
@@ -21,9 +22,10 @@ import { reactive } from "vue";
 
 const options = reactive([
   {
-    urlImage: "./public/code.png",
-    title: "Nuxt 2 con SuperMap",
     description: "Geoportal elaborado con SuperMap iClient para Vue.js",
+    host: "https://main--glowing-klepon-6a3f24.netlify.app/view-2d/",
+    title: "Nuxt 2 con SuperMap",
+    urlImage: "/images/code.png",
   },
 ]);
 </script>

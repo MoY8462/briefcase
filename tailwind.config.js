@@ -35,6 +35,7 @@ module.exports = {
       backgroundImage: {
         arrow_up: "url('./assets/icons/arrow_up.svg')",
         code: "url('./assets/icons/code.svg')",
+        computer_desktop: "url('./assets/icons/computer_desktop.svg')",
         doc: "url('./assets/icons/doc.svg')",
       },
     },
